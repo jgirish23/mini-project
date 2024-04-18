@@ -50,6 +50,13 @@ socket.on('game-data', (data, callback) => {
 	game_state.game.opp.score = data.opp_score;
 	game_state.game.ball = data.ball;
 	game_state.game.opp.pos = data.opp_pos;
+	
+	if(game_state.game.self.score >= 15){
+		alert(game_state.game.self.username + " won!");
+	} else if (game_state.game.opp.score >= 15) {
+		alert(game_state.game.opp.username + " won!")
+	}
+
 	callback(game_state.game.self.pos);
 });
 
