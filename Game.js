@@ -1,5 +1,5 @@
 const uuid = require('uuid');
-const MAX_SPEED = 3;
+const MAX_SPEED = 10;
 const MIN_SPEED = 2;
 const MAX_SCORE = 10;
 
